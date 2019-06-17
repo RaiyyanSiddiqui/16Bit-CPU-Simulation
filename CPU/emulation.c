@@ -3,6 +3,8 @@
 
 #include "emulator_header.h"
 
+// WIP
+
 // INLINE
 inline void writeInstruction(struct RAM *memory, uint16_t address, uint8_t opCode, uint8_t operand){
     memory->STORE[address] = ((uint16_t)(opCode << 8)) + ((uint16_t)(operand));
