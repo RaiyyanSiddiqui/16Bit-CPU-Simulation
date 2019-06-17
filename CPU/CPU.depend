@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1555796628 source:c:\users\raiyy\desktop\program languages\c\firstc\cpu\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"emulator_header.h"
+
+1555782233 source:c:\users\raiyy\desktop\program languages\c\firstc\cpu\cpu_source.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"CPU_header.h"
+
+1555796709 c:\users\raiyy\desktop\program languages\c\firstc\cpu\cpu_header.h
+	<stdint.h>
+	<stdbool.h>
+	"op_codes_header.h"
+
+1554089579 source:c:\users\raiyy\desktop\program languages\c\firstc\cpu\opcodes.c
+	"CPU_header.h"
+
+1555708822 c:\users\raiyy\desktop\program languages\c\firstc\cpu\op_codes_header.h
+
+1555711068 source:c:\users\raiyy\desktop\program languages\c\firstc\cpu\emulation.c
+	<stdio.h>
+	<stdlib.h>
+	"emulator_header.h"
+
+1555699205 c:\users\raiyy\desktop\program languages\c\firstc\cpu\emulator_header.h
+	"CPU_header.h"
+
