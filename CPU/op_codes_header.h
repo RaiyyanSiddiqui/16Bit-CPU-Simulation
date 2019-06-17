@@ -9,14 +9,14 @@ enum Ops{ // referenced by 8bit opcode (255 vals)
     SRA,/*0x06*/      SDA,/*0x07*/      SNA,/*0x08*/  //SRA: looks at other register for address to store
 
     LIB,/*0x09*/      LDB,/*0x0A*/      LNB,/*0x0B*/
-    SRB,/*0x0C*/      SDB,/*0x0D*/      SNB,/*0x0E*/  //SRA: looks at other register for address to store
+    SRB,/*0x0C*/      SDB,/*0x0D*/      SNB,/*0x0E*/  //SRB: looks at other register for address to store
 
     LIC,/*0x0F*/      LDC,/*0x10*/      LNC,/*0x11*/
-    SRC,/*0x12*/      SDC,/*0x13*/      SNC,/*0x14*/  //SRA: looks at other register for address to store
+    SRC,/*0x12*/      SDC,/*0x13*/      SNC,/*0x14*/  //SRC: looks at other register for address to store
 
     LID,/*0x15*/      LDD,/*0x16*/      LND,/*0x17*/
-    SRD,/*0x18*/      SDD,/*0x19*/      SND,/*0x1A*/  //SRA: looks at other register for address to store
-    /////////////////////////////////
+    SRD,/*0x18*/      SDD,/*0x19*/      SND,/*0x1A*/  //SRD: looks at other register for address to store
+    ///////////////////////////////// Write Ones and Write Zeros
     //shifted by 3
     SRO,/*0x1B*/      SDO,/*0x1C*/      SNO,/*0x1D*/
     //shifted by 3
@@ -46,10 +46,5 @@ enum Ops{ // referenced by 8bit opcode (255 vals)
     // compares 2 integers, if a is higher -> pos, elif a is lower -> neg, equal -> 0
 };
 
-struct Death{
-    enum Ops op;
-    char name;
-
-} operbun, laper, instructAType, youDieSahl;
 
 #endif//__opcodesZ__
